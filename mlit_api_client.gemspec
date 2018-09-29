@@ -9,9 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["kawakubox"]
   spec.email         = ["shigefumi.kawakubo@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = 'It\'s a WebAPI client for [国土数値情報 ダウンロードサービス](http://nlftp.mlit.go.jp/ksj/api/about_api.html)'
+  spec.homepage      = 'https://github.com/kawakubox/mlit_api_client'
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
