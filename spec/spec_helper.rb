@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "mlit_api_client"
+require "mlit_api"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

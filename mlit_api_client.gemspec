@@ -1,11 +1,11 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "mlit_api_client/version"
+require "mlit_api/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "mlit_api_client"
-  spec.version       = MlitApiClient::VERSION
+  spec.version       = MlitApi::VERSION
   spec.authors       = ["kawakubox"]
   spec.email         = ["shigefumi.kawakubo@gmail.com"]
 
