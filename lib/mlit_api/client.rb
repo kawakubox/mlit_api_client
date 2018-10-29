@@ -35,7 +35,7 @@ module MlitApi
       'ksj/api/1.0b/index.php/app/getKSJSummary.xml'
     end
 
-    def summary_params
+    def base_params
       {
         appId: 'ksjapibeta1',
         lang: 'J',
@@ -44,7 +44,7 @@ module MlitApi
     end
 
     def summary_contents
-      @conn.get(summary_resource_path, summary_params).body
+      @conn.get(summary_resource_path, base_params).body
     end
 
     def summary_attributes
@@ -56,7 +56,6 @@ module MlitApi
     end
 
     def url_contents(**params)
-      base_params = { appId: 'ksjapibeta1', lang: 'J', dataformat: 1 }
       @conn.get(url_resource_path, base_params.merge(params)).body
     end
 
